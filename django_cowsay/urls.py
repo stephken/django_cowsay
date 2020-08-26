@@ -18,6 +18,8 @@ from django.urls import path
 from cowsay_app import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.index_view, name='index'),
+    path('history/', views.most_recent),
+    path('admin/', admin.site.urls),
+    
 ]
